@@ -1,5 +1,3 @@
-{{ self.title() }}
-
 作者: fjh
 
 ## Solution
