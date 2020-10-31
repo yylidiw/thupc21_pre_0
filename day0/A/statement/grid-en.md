@@ -20,7 +20,7 @@ considered different if the chosen two grids are different, i.e. (X, Y) is the s
 
 The first line contains three integers, N(1<=N<=$10^9$), M（ 1 <=N<= 109 ）, P
 
-## （ 0 <=P<= 105 ）.
+ （ 0 <=P<= 105 ）.
 
 P lines are followed, each line containing four positive integers, Ui, Di
 （1<Ui<=Di<N）, Li, Ri(1<Li<=Ri<M), representing one rectangular obstacle.
@@ -35,15 +35,16 @@ For any two different rectangular obstacles i and j, Di+1<Uj or Dj+1<Ui, and
 
 # 【Output Format】：
 
-# Only one integer, the total score module 109 +7.
+ Only one integer, the total score module 109 +7.
 
 # 【Sample】：
 
-Input Output
+Input
 3 3 1
 2 2 2 2
 
-## 64
+Output
+64
 
 There are 8 cases of distance 1.
 There are 8 cases of distance 2.
