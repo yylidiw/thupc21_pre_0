@@ -17,5 +17,8 @@ time limit: 1.0
 title:
   zh-cn: 切切糕
 type: program
-users: {}
+users: 
+  esc:
+    dp: {expected: == 100, path: esc/cake.cpp}
+    bf: {expected: == 0, path: esc/cakebf.cpp}
 version: 2
