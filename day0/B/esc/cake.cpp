@@ -14,14 +14,12 @@ namespace io
 }
 
 int x[111111];
-double f[2555][2555];
-int g[2555][2555];
+double f[1111][1111];
+int g[1111][1111];
 int main()
 {
     int n=io::F(),m=io::F();
-    assert(1<=n&&n<=2500);
-    assert(1<=m&&m<=n);
-    for(int i=1;i<=n;++i)x[i]=io::F(),assert(x[i]>=1&&x[i]<=50000);
+    for(int i=1;i<=n;++i)x[i]=io::F();
     std::sort(x+1,x+n+1);
     for(int i=n;i;--i)
         for(int j=m;j;--j)
