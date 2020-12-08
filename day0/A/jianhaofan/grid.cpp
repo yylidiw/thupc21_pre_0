@@ -97,8 +97,8 @@ int main()
 		cx=(r[i].tx-r[i].fx+1)*(r[i].ty-r[i].fy+1)%mod;
 		sx=(r[i].fx+r[i].tx)*(r[i].tx-r[i].fx+1)%mod*div2%mod*(r[i].ty-r[i].fy+1)%mod;
 		(ans5+=(sx*cntx%mod-sumx*cx%mod))%=mod;
-		sumx+=sx;
-		cntx+=cx;
+		(sumx+=sx)%=mod;
+		(cntx+=cx)%=mod;
 	}
 	
 	sort(r+1,r+p+1,cmp2);
@@ -108,8 +108,8 @@ int main()
 		cy=(r[i].tx-r[i].fx+1)*(r[i].ty-r[i].fy+1)%mod;
 		sy=(r[i].fy+r[i].ty)*(r[i].ty-r[i].fy+1)%mod*div2%mod*(r[i].tx-r[i].fx+1)%mod;
 		(ans5+=(sy*cnty%mod-sumy*cy%mod))%=mod;
-		sumy+=sy;
-		cnty+=cy;
+		(sumy+=sy)%=mod;
+		(cnty+=cy)%=mod;
 	}
 	ans=((ans1-ans2+ans3+ans4+ans5)%mod+mod)%mod;
 	printf("%lld\n",ans);
