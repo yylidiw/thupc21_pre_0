@@ -5,9 +5,9 @@ int main()
     int cn=0;
     while(ch=getchar(),1)
     {
-        if(ch>='0'&&ch<='9'||ch==' '||ch=='\n'||ch=='.')putchar(ch);
+        if(ch>='0'&&ch<='9'||ch==' '||ch=='\n'||ch=='.'||ch=='-'||ch=='+')putchar(ch);
         //printf("%d\n",(int)ch);
-        if(++cn==1000)return 0;
+        if(++cn==3000000)return 0;
     }
     return 0;
 }
