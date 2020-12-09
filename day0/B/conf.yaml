@@ -20,6 +20,8 @@ title:
   zh-cn: 切切糕
 type: program
 users: 
+  MineHaHaTa:
+  	std: {expected: == 100, path: MineHaHaTa/checkout.cpp}
   esc:
     dp: {expected: == 100, path: esc/cake.cpp}
     bf: {expected: == 0, path: esc/cakebf.cpp}

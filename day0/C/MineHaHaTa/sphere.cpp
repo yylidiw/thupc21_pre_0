@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-#define MAXN 20000
+#define MAXN 30000
 using namespace std;
 const double eps=1e-12;
 int N,M,K,l,r,mid,ans_tt,ans_us;
