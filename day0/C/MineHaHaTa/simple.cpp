@@ -70,7 +70,7 @@ int main()
             //printf("%.4lf %.4lf\n",dis(Point(0,0,R),C),dis(ki,C));
             if (dcmp(dis(ki,C)-dis(Point(0,0,R),C))<0)ans_tt=1;
         }
-        for (int i=1;i<=N;i++)
+        for (int i=1;i<=M;i++)
         {
             Point C=center(us[i][0],us[i][1],Point(0,0,R));
             //printf("%.4lf %.4lf\n",dis(Point(0,0,R),C),dis(ki,C));

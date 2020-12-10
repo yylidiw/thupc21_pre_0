@@ -80,6 +80,7 @@ int main()
     {
         P.input();tt[i][0]=Point(P);
         P.input();tt[i][1]=Point(P);
+        //printf("%.4lf %.4lf %.4lf %.4lf\n",tt[i][0].x,tt[i][0].y,tt[i][1].x,tt[i][1].y);
         //tt[i][0].input();tt[i][1].input();
         //tt[i][0].output();tt[i][1].output();
         if (dcmp((tt[i][1]-tt[i][0])*(Vector(0,0)-tt[i][0]))<0)swap(tt[i][0],tt[i][1]);
