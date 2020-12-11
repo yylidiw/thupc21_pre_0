@@ -23,4 +23,8 @@ users:
   MineHaHaTa:
     std: {expected: == 100, path: MineHaHaTa/sphere.cpp}
     bf: {expected: == 0, path: MineHaHaTa/simple.cpp}
+  AnalogueHeart:
+    ac: {expected: == 100, path: AnalogueHeart/sphere.cpp}
+    force1: {expected: == 0, path: AnalogueHeart/force.cpp}
+    force2: {expected: == 0, path: AnalogueHeart/force2.cpp}
 version: 2

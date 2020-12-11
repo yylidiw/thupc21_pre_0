@@ -21,4 +21,6 @@ type: program
 users:
   jianhaofan:
     biaocheng: {expected: == 100, path: jianhaofan/grid.cpp}
+  AnalogueHeart:
+    ac: {expected: == 100, path: AnalogueHeart/grid.cpp}
 version: 2
