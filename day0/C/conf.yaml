@@ -21,6 +21,6 @@ title:
 type: program
 users: 
   MineHaHaTa:
-  	std: {expected: == 100, path: MineHaHaTa/sphere.cpp}
-  	bf: {expected: == 0, path: MineHaHaTa/simple.cpp}
+    std: {expected: == 100, path: MineHaHaTa/sphere.cpp}
+    bf: {expected: == 0, path: MineHaHaTa/simple.cpp}
 version: 2
