@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 #define sqr(x) ((x)*(x))
-#define MAXN 30000
+#define MAXN 500
 using namespace std;
 const double eps=1e-8;
 int N,M,T;
@@ -20,6 +20,7 @@ struct Point
         if (s[0]=='-')z=-sqrt(R*R-x*x-y*y);
     }
 }tt[MAXN+10][2],us[MAXN+10][2],ki;
+Point Ctt[MAXN+10],Cus[MAXN+10];
 int ans_tt,ans_us;
 double dis(Point P,Point Q)
 {
@@ -57,24 +58,30 @@ int main()
 {
     scanf("%d%d%d%lf",&N,&M,&T,&R);
     for (int i=1;i<=N;i++)
+    {
         tt[i][0].input(),tt[i][1].input();
+        Ctt[i]=center(tt[i][0],tt[i][1],Point(0,0,R));
+    }
     for (int i=1;i<=M;i++)
+    {
         us[i][0].input(),us[i][1].input();
+        Cus[i]=center(us[i][0],us[i][1],Point(0,0,R));
+    }
     while (T--)
     {
         ki.input();
         ans_tt=ans_us=0;
         for (int i=1;i<=N;i++)
         {
-            Point C=center(tt[i][0],tt[i][1],Point(0,0,R));
+            //Point C=center(tt[i][0],tt[i][1],Point(0,0,R));
             //printf("%.4lf %.4lf\n",dis(Point(0,0,R),C),dis(ki,C));
-            if (dcmp(dis(ki,C)-dis(Point(0,0,R),C))<0)ans_tt=1;
+            if (dcmp(dis(ki,Ctt[i])-dis(Point(0,0,R),Ctt[i]))<0)ans_tt=1;
         }
         for (int i=1;i<=M;i++)
         {
-            Point C=center(us[i][0],us[i][1],Point(0,0,R));
+            //Point C=center(us[i][0],us[i][1],Point(0,0,R));
             //printf("%.4lf %.4lf\n",dis(Point(0,0,R),C),dis(ki,C));
-            if (dcmp(dis(ki,C)-dis(Point(0,0,R),C))<0)ans_us=1;
+            if (dcmp(dis(ki,Cus[i])-dis(Point(0,0,R),Cus[i]))<0)ans_us=1;
         }
         if (ans_tt)puts("Safe");
         else if (!ans_us)puts("Passer");
