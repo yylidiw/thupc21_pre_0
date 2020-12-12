@@ -6,7 +6,7 @@ using namespace std;
 #define cmin(_a, _b) (_a > (_b) ? _a = (_b) : 0)
 #define dmax(_a, _b) ((_a) > (_b) ? (_a) : (_b))
 #define dmin(_a, _b) ((_a) < (_b) ? (_a) : (_b))
-#define MAX_NM 504
+#define MAX_NM 5004
 struct Point {
 	double x, y;
 	inline bool operator < (const Point &q) const {
