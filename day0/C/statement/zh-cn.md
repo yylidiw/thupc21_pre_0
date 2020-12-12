@@ -12,7 +12,7 @@ ustze 喜欢几何，他认为几何是数学竞赛中最简单的一环，在�
 
 {{ self.input_file() }}
 
-第一行包含三个正整数 $N,M$ 和 $T(1\leq N,M\leq 5000,1\leq T\leq 1.5\times 10^5)$，分别表示 Tinytree 确定的点对数、ustze 确定的点对数和 Kiana 确定的跑路点数。
+第一行包含三个正整数 $N,M$ 和 $T(1\leq N,M\leq 5000,1\leq T\leq 3\times 10^5)$，分别表示 Tinytree 确定的点对数、ustze 确定的点对数和 Kiana 确定的跑路点数。
 
 第二行包含一个正整数 $R(1\leq R\leq 10^3)$，表示球面的半径大小。
 
